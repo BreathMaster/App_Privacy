@@ -4,29 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>先行版下载二维码</title>
+    <title>下载页面</title>
     <style>
-        /* 样式：将图片居中 */
-        .center-image {
+        /* 样式用于居中对齐内容 */
+        .container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             text-align: center;
-            margin-top: 20px; /* 上下留白 */
         }
-        img {
-            max-width: 300px; /* 控制图片大小 */
-            height: auto;
+        .download-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
-    <div class="center-image">
-        <p>先行版下载二维码：</p>
-        <img src="image/qr-code.png" alt="先行版下载二维码">
-    </div>
+<div class="container">
+    <h2>先行版下载二维码</h2>
+    <!-- 插入图片 -->
+    <img src="image/qr-code.png" alt="二维码" style="max-width: 300px;">
+
+    <!-- 添加安装按钮 -->
+    <a href="https://www.pgyer.com/mPDwCpnT" class="download-button">安装</a>
+</div>
 
 </body>
 </html>
